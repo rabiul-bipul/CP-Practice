@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int H, W, count = 0;
+    scanf("%d %d", &H, &W);
+    char ara[H][W];
+    for (int row = 0; row < H; row++)
+    {
+        for (int col = 0; col < W; col++)
+        {
+            scanf(" %c", &ara[row][col]);
+            if (ara[row][col] == '#')
+            {
+                count++;
+            }
+        }
+    }
+
+    printf("%d", count);
+    return 0;
+}
